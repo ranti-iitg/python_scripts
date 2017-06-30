@@ -50,7 +50,18 @@ all_data = np.load('simple_data.npz')
 imgs_color = all_data['imgs']
 
 
+import h5py
+f = h5py.File('file.h5')
+for i in range(len(list_arrays)):
+  f.create_dataset('arr_{}'.format(i), data=list_arrays[i])
 
+
+fetching arrays:
+
+f = h5py.File('file.h5')
+f.keys()
+f['arr_0'].value
+f['arr_0'][:]
 
 
 
