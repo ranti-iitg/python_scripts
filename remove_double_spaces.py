@@ -64,5 +64,9 @@ f['arr_0'].value
 f['arr_0'][:]
 
 
-
+        plt.Figure()
+        f, (ax1, ax2,ax3) = plt.subplots(1, 3)
+        ax1.imshow(x1[0])
+        ax2.imshow(x2[0].reshape((256,256)))
+        ax3.imshow(y[0])
 
