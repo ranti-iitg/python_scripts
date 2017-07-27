@@ -70,3 +70,8 @@ f['arr_0'][:]
         ax2.imshow(x2[0].reshape((256,256)))
         ax3.imshow(y[0])
 
+        
+ >>> from collections import Counter
+>>> z = ['blue', 'red', 'blue', 'yellow', 'blue', 'red']
+>>> Counter(z)
+Counter({'blue': 3, 'red': 2, 'yellow': 1})
